@@ -1,0 +1,28 @@
+ul{
+    list-style: none;
+}
+li.lista01::before{
+    content: " > ";
+}
+
+
+li.lista01::after{
+    content: " __ ";
+}
+
+li.lista02::before{
+    content: "  ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: bisque;
+
+}
+
+
+li.lista02 span{
+   padding: 0 0 0 2%;
+   color: red;
+}
+

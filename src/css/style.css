@@ -1,0 +1,282 @@
+/* CSS STYLES */
+
+/* LOGO */
+div.logo {
+  width: 30vw;
+  min-width: 350px;
+  text-align: center;
+  margin-bottom: 12px;
+  padding: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 22px 0 22px 0;
+}
+div.logo span {
+  font-family: 'Lobster Two', cursive;
+  font-size: 80%;
+  letter-spacing: 0.4rem;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+
+div.logo > img {
+  width: 20%;
+  vertical-align: middle;
+}
+
+/* HEADER */
+/* Seletor filho */
+
+header div.slogan {
+  background-color: #000;
+  color: #fff;
+  padding: 0 0 7px 0;
+}
+header div.slogan p {
+  padding: 0 1rem 0 0;
+}
+
+/* TAG */
+
+p {
+  text-align: justify;
+  text-indent: 20px;
+  text-align-last: right;
+  letter-spacing: 0.3rem; /*espaço entre as letras*/
+  word-spacing: 0.3rem; /*espaço das palavras*/
+  white-space: wrap; /*controla se vai ter ou não quebra de linha.*/
+}
+
+p::first-letter {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+h2 {
+  color: blue;
+  margin: 0 0 10px 0;
+}
+
+ul.listaInfo {
+  list-style-image: url(../../images/png/teste.png);
+}
+
+/* Adjacentes */
+h2 + span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: brown;
+  font-weight: bold;
+  display: block;
+  text-align: right;
+}
+
+/* CLASSES */
+.lobster {
+  font-family: 'Lobster Two', cursive;
+}
+
+.h2Color {
+  color: #9999;
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.container01 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.container02 {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.container02 {
+  padding: 4%;
+}
+
+.container02 div p {
+  text-align: left;
+  line-height: normal;
+}
+
+.container02 div p::first-letter {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+div#imgFooter div:nth-of-type(1) {
+  background-image: url(../../images/coxinha-brasileira.jpg);
+  background-size: cover;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  border: 3x dashed #fff;
+  box-shadow: 12px 12px 3px #a70d0d;
+}
+div#imgFooter div:nth-of-type(2) {
+  background-image: url(../../images/frutas-e-vegetais.jpg);
+  background-size: cover;
+  background-position: -100px 0;
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  border: 3x dashed #fff;
+  box-shadow: -12px -12px 3px #a70d0d;
+}
+
+/* ARTICLE */
+article {
+  min-height: 100vh;
+  padding: 40px 0 0 0;
+}
+
+article#pratos p {
+  color: #9999;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+article#pratos table td p {
+  color: #000;
+}
+
+/* Seletor vizinho */
+article#pratos p:active ~ table {
+  border: dashed 2px green; /*sort hant*/
+}
+
+article#pratos p:active {
+  color: red;
+}
+
+/* NAV */
+div.navUp {
+  text-align: right;
+}
+div.navUp i {
+  color: brown;
+  cursor: pointer;
+}
+
+div.naPos {
+  background-color: red;
+  width: 8.5vw;
+  height: 140px;
+  position: fixed;
+  right: 0px;
+  top: 30vh;
+  padding: 0 10px 0 0;
+  border-radius: 25px 0 25px;
+}
+div.naPos ul {
+  padding: 0;
+  list-style: none;
+}
+div.naPos ul li {
+  margin: 0 0 10px 0;
+  text-align: left;
+  padding: 0 0 0 10px;
+}
+
+div.naPos ul li a {
+  font-size: 0.8rem;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  margin: 0 0 7vh 0;
+}
+nav ul {
+  margin: 0;
+  /* height: auto; */
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+nav.nav1 ul li a {
+  /* text-decoration: underline; */
+  /* text-decoration-color: red; */
+  display: inline-block;
+  margin: 0 0.5vw 0 0;
+  text-decoration: none;
+  background-color: #a70d0d;
+  padding: 12px 22px;
+  color: #fff;
+}
+nav.nav1 a:hover {
+  text-decoration: overline #fff dotted 4px;
+}
+
+nav.nav2 ul li a {
+  /* text-decoration: underline; */
+  /* text-decoration-color: red; */
+  display: inline-block;
+  margin: 0 0.2vw 0 0;
+  text-decoration: none;
+  background-color: #fff;
+  border-radius: 0 0 20px 22px;
+  padding: 12px 22px;
+  color: #999;
+  border: 2px solid black;
+  border-top-width: 0;
+}
+nav.nav2 a:hover {
+  /* text-decoration: underline #fff dotted 4px; */
+  color: #000;
+}
+
+/* FORMS */
+
+form#formReserva {
+  margin: 80px auto;
+}
+
+form#formReserva ul {
+  list-style: none;
+}
+textarea,input:not([type='checkbox']):not([type='radio']):not([type='color']):not(
+    [type='date']
+  ):not([type='button']):not([type='image']) {
+  width: 80%;
+  padding: 2%;
+  font-size: 1.2rem;
+  border: none;
+  box-shadow: 1px 1px 1px #eee, -1px -1px 2px #eee;
+}
+
+textarea:focus,input:focus{
+  outline: none;
+  background-color: rgba(156, 129, 129, 0.4);
+}
+
+fieldset{
+  border: 1px dashed #eee;
+}
+legend{
+  text-align: center;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin: 2%;
+  padding: 0 0 0 10px;
+}
+
+/* Atributos */
+input[type='radio'] {
+  accent-color: green;
+}
+input[type='checkbox']:checked + span {
+  color: blue;
+}
+
+textarea {
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -o-border-radius: 12px;
+  -ms-border-radius: 12px;
+  border-radius: 12px;
+}
