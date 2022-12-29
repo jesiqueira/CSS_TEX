@@ -152,5 +152,5 @@ Media Quere option
 
 //Tablets - Paisagem
 @media (max-width:1195px) and (orientation:landscape),
-(max-width) and (min-height:1023px) and (orientation: landscape){....}
+(max-width: 1367px) and (min-height:1023px) and (orientation: landscape){....}
 */
